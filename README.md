@@ -1,4 +1,4 @@
 Servo_Rhythm_Controller
 =======================
 
-Software for Servo Controller (WINDOWS X86)
+Servo Controller software for WINDOWS X86 
