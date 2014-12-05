@@ -1,0 +1,28 @@
+E:\C#实例\Serial\Serial\bin\Release\Serial.exe
+E:\C#实例\Serial\Serial\bin\Release\Serial.pdb
+E:\C#实例\Serial\Serial\obj\x86\Release\ResolveAssemblyReference.cache
+E:\C#实例\Serial\Serial\obj\x86\Release\SerialportSample.SerialportSampleForm.resources
+E:\C#实例\Serial\Serial\obj\x86\Release\Serial.Properties.Resources.resources
+E:\C#实例\Serial\Serial\obj\x86\Release\GenerateResource.read.1.tlog
+E:\C#实例\Serial\Serial\obj\x86\Release\GenerateResource.write.1.tlog
+E:\C#实例\Serial\Serial\obj\x86\Release\Serial.exe
+E:\C#实例\Serial\Serial\obj\x86\Release\Serial.pdb
+F:\C#\Serial\Serial\Serial\obj\x86\Release\Serial.exe
+F:\C#\Serial\Serial\Serial\obj\x86\Release\Serial.pdb
+F:\C#\Serial\Serial\Serial\bin\Release\Serial.exe
+F:\C#\Serial\Serial\Serial\bin\Release\Serial.pdb
+F:\C#\Serial\Serial\Serial\obj\x86\Release\ResolveAssemblyReference.cache
+F:\C#\Serial\Serial\Serial\obj\x86\Release\SerialportSample.SerialportSampleForm.resources
+F:\C#\Serial\Serial\Serial\obj\x86\Release\Serial.Properties.Resources.resources
+F:\C#\Serial\Serial\Serial\obj\x86\Release\GenerateResource.read.1.tlog
+F:\C#\Serial\Serial\Serial\obj\x86\Release\GenerateResource.write.1.tlog
+E:\project\servo controller\Serial\Serial\bin\Release\Serial.exe.config
+E:\project\servo controller\Serial\Serial\obj\x86\Release\Serial.exe
+E:\project\servo controller\Serial\Serial\obj\x86\Release\Serial.pdb
+E:\project\servo controller\Serial\Serial\bin\Release\USBDataLogger0.ico
+E:\project\servo controller\Serial\Serial\bin\Release\Serial.exe
+E:\project\servo controller\Serial\Serial\bin\Release\Serial.pdb
+E:\project\servo controller\Serial\Serial\obj\x86\Release\SerialportSample.SerialportSampleForm.resources
+E:\project\servo controller\Serial\Serial\obj\x86\Release\Serial.Properties.Resources.resources
+E:\project\servo controller\Serial\Serial\obj\x86\Release\Serial.csproj.GenerateResource.Cache
+E:\project\servo controller\Serial\Serial\obj\x86\Release\Serial.csprojResolveAssemblyReference.cache
