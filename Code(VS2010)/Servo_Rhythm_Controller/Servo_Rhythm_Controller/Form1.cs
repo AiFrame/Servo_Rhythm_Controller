@@ -65,33 +65,33 @@ namespace SerialportSample
 
         void comm_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            if (Closing_new) return;//如果正在关闭，忽略操作，直接返回，尽快的完成串口监听线程的一次循环  
+            if (Closing_new) return;// 
             try
             {
-                Listening = true;//设置标记，说明我已经开始处理数据，一会儿要使用系统UI的。  
-                int n = comm.BytesToRead;//先记录下来，避免某种原因，人为的原因，操作几次之间时间长，缓存不一致  
-                byte[] buf = new byte[n];//声明一个临时数组存储当前来的串口数据  
-                received_count += n;//增加接收计数  
-                comm.Read(buf, 0, n);//读取缓冲数据  
-                builder.Clear();//清除字符串构造器的内容  
-                //因为要访问ui资源，所以需要使用invoke方式同步ui。  
+                Listening = true;// 
+                int n = comm.BytesToRead;// 
+                byte[] buf = new byte[n];// 
+                received_count += n;// 
+                comm.Read(buf, 0, n);// 
+                builder.Clear();// 
+                // 
                 this.Invoke((EventHandler)(delegate
                 {
-                    //判断是否是显示为16进制  
+                    // 
                     if (checkBoxHexView.Checked)
                     {
-                        //依次的拼接出16进制字符串  
+                        // 
                         foreach (byte b in buf)
-                        {  //把接收到的字节数据转换为2个字节的十六进制形式，并在后面加上空格。
+                        {  // 
                             builder.Append(b.ToString("X2") + " ");
                         }
                     }
                     else
                     {
-                        //直接按ASCII规则转换成字符串
+                        // 
                         builder.Append(Encoding.ASCII.GetString(buf));
                         String tempS = builder.ToString();
-                        //追加的形式添加到文本框末端，并滚动到最后。  
+                        // 
                         this.txGet.AppendText(tempS);
 
                         if (Cmd_READ)
@@ -106,9 +106,9 @@ namespace SerialportSample
                             }
                             Cmd_READ = false;
                         }
-                        if (Cmd_DOWN)//下载动作数据
+                        if (Cmd_DOWN)// 
                         {
-                            if (builder.ToString() == "A")//每收到一个A发一条
+                            if (builder.ToString() == "A")// 
                             {
                                 if (listBoxSendnum < listBoxSend.Items.Count)
                                 {
@@ -121,7 +121,7 @@ namespace SerialportSample
                                 {
                                     Cmd_DOWN = false;
                                     listBoxSendnum = 0;
-                                    comm.Write("STOP!");//发送结束告诉下位机。
+                                    comm.Write("STOP!");// 
                                     MessageBox.Show("Download complete！！");
                                 }
                             }
@@ -140,52 +140,52 @@ namespace SerialportSample
                     }
 
 
-                    //修改接收计数  
+                    // 
                     labelGetCount.Text = "Receive:" + received_count.ToString();
                 }));
             }
             finally
             {
-                Listening = false;//我用完了，ui可以关闭串口了。  
+                Listening = false;//  
             }
 
         }
 
         private void buttonOpenClose_Click_1(object sender, EventArgs e)
         {
-            //根据当前串口对象，来判断操作
-            //如果串行端口已打开，则为 true；否则为 false。 默认值为 false。 
+            // 
+            //  
             if (comm.IsOpen)
             {
-                //串口打开时点击按钮，则关闭串口
+                // 
                 comm.Close();
             }
             else
             {
-                //关闭时点击，则设置好端口，波特率后打开
+                // 
                 comm.PortName = comboPortName.Text;
                 comm.BaudRate = int.Parse(comboBaudrate.Text);
-                //把字符串转换为eunm枚举类型。
+                // 
                 comm.Parity = (Parity)Enum.Parse(typeof(Parity), comboBoxParity.SelectedItem.ToString());
                 try
                 {
-                    comm.Open(); //打开串口
+                    comm.Open(); // 
                 }
                 catch (Exception ex)
                 {
-                    //捕获到异常信息，创建一个新的comm对象，之前的不能用了。
+                    // 
                     comm = new SerialPort();
-                    //现实异常信息给客户。
+                    // 
                     MessageBox.Show(ex.Message);
                 }
             }
-            //设置按钮的状态
+            // 
             buttonOpenClose.Text = comm.IsOpen ? "Close" : "Open";
             buttonSend.Enabled = comm.IsOpen;
 
         }
 
-        //动态的修改获取文本框是否支持自动换行。
+        // 
         private void checkBoxNewlineGet_CheckedChanged(object sender, EventArgs e)
         {
             txGet.WordWrap = checkBoxNewlineGet.Checked;
@@ -193,7 +193,7 @@ namespace SerialportSample
 
         private void buttonReset_Click_1(object sender, EventArgs e)
         {
-            //复位接受和发送的字节数计数器并更新界面。
+            // 
             send_count = received_count = 0;
             labelGetCount.Text = "Receive:0";
             labelSendCount.Text = "Send:0";
@@ -202,94 +202,84 @@ namespace SerialportSample
 
         private void buttonSend_Click_1(object sender, EventArgs e)
         {
-            //定义一个变量，记录发送了几个字节
+            // 
             int n = 0;
-            //16进制发送
+            // 
             if (checkBoxHexSend.Checked)
             {
-                //我们不管规则了。如果写错了一些，我们允许的，只用正则得到有效的十六进制数
+                // 
                 MatchCollection mc = Regex.Matches(txSend.Text, @"(?i)[0-9a-f]{2}");
 
-                List<byte> buf = new List<byte>();//填充到这个临时列表中
-                //依次添加到列表中
+                List<byte> buf = new List<byte>();// 
+                // 
                 foreach (Match m in mc)
                 {
                     buf.Add(byte.Parse(m.Value));
                 }
-                //转换列表为数组后发送
+                // 
 
                 comm.Write(buf.ToArray(), 0, buf.Count);
-                //记录发送的字节数
+                // 
                 n = buf.Count;
             }
-            else//ascii编码直接发送
+            else// 
             {
-                //包含换行符
+                // 
                 if (checkBoxNewlineSend.Checked)
                 {
                     comm.WriteLine(txSend.Text);
                     n = txSend.Text.Length + 2;
                 }
-                else//不包含换行符
+                else// 
                 {
                     comm.Write(txSend.Text);
                     n = txSend.Text.Length;
                 }
             }
-            send_count += n;//累加发送字节数
-            labelSendCount.Text = "Send:" + send_count.ToString();//更新界面
+            send_count += n;// 
+            labelSendCount.Text = "Send:" + send_count.ToString();// 
         }
 
         private void SerialportSampleForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (comm.IsOpen)
             {
-                //串口打开时点击按钮，则关闭串口
+                // 
                 comm.Close();
             }
-            //设置按钮的状态
+            // 
             buttonOpenClose.Text = comm.IsOpen ? "Close" : "Open";
             buttonSend.Enabled = comm.IsOpen;
 
 
-            // //在关闭窗体前发生，此时可以取消窗体的关闭。
-            //DialogResult result = MessageBox.Show("你确定要关闭吗！", "提示信息",
-            //    MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            //if (result == DialogResult.OK)
-            //{
-            //    e.Cancel = false;  //点击OK
-            //}
-            //else
-            //{
-            //    e.Cancel = true;
-            //}  
+             
 
         }
 
         /// <summary>
-        /// 实现实时刷新功能
+        ///  
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void timerCheckComPorts_Tick(object sender, EventArgs e)
         {
-            //刷新本机串口，并排序
-            //获取当前计算机串口的名称数组
+            // 
+            // 
             string[] ports = SerialPort.GetPortNames();
-            //判断本机串口是否有变化。
+            // 
             if (comboPortName.Items.Count != ports.Length)
             {
-                //首先清空条目
+                // 
                 comboPortName.Items.Clear();
-                //刷新串口数量
+                // 
                 comboPortName.Items.AddRange(ports);
-                //设置默认串口
+                // 
                 comboPortName.SelectedIndex = comboPortName.Items.Count > 0 ? 0 : -1;
             }
         }
         private void commWrite(string strText, string num)
         {
-            //只有当串口打开时才发送。
+            // 
             if (comm.IsOpen) comm.Write(frameheader + num + strText + "T100" + frameTail);
         }
 
@@ -487,7 +477,7 @@ namespace SerialportSample
         }
         #endregion
         #region
-        //所有的Go键点击程序
+        // 
         private void buttonS1_Click(object sender, EventArgs e)
         {
             UInt16 i = 0;
@@ -747,7 +737,7 @@ namespace SerialportSample
 
         private string listItems(string strText, string num)
         {
-            //添加到list中
+            // 
             return frameheader + num + strText;
         }
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -872,7 +862,7 @@ namespace SerialportSample
                 RoundRunflag = false;
                 if (MessageBox.Show("This will clear all data!Are you sure？", "Erase FLASH!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                 {
-                    comm.Write("CLEAR!");//清除所有EEPROM
+                    comm.Write("CLEAR!");// 
                     Cmd_Clear = true;
                     comboBoxTAnum.Items.Clear();
                 }
@@ -884,14 +874,14 @@ namespace SerialportSample
         {
             if ((buttonCmd_Enable.Text == "Disable"))
             {
-                if (comm.IsOpen) comm.Write("EN0!");//禁用所有
+                if (comm.IsOpen) comm.Write("EN0!");// 
                 buttonCmd_Enable.Text = "Enable";
             }
             else
             {
                 if (comboBoxTAnum.Text != "")
                 {
-                    if (comm.IsOpen) comm.Write("EN" + comboBoxTAnum.Text + "!");//启用相应的组
+                    if (comm.IsOpen) comm.Write("EN" + comboBoxTAnum.Text + "!");// 
                     buttonCmd_Enable.Text = "Disable";
                 }
             }
@@ -899,13 +889,13 @@ namespace SerialportSample
 
         private void buttonCmd_Go_Click(object sender, EventArgs e)
         {
-            if (comm.IsOpen) comm.Write("GO!");//禁用所有
+            if (comm.IsOpen) comm.Write("GO!");// 
             buttonCmd_Enable.Text = "Disable";
         }
 
         private void buttonCmd_READ_Click(object sender, EventArgs e)
         {
-            if (comm.IsOpen) { comm.Write("READ!"); Cmd_READ = true; }//发出读取命令
+            if (comm.IsOpen) { comm.Write("READ!"); Cmd_READ = true; }// 
         }
 
         private void saveFileDialogSave_FileOk(object sender, CancelEventArgs e)
@@ -933,7 +923,7 @@ namespace SerialportSample
             string str = null;
             string names = openFileDialogIn.FileName;
             StreamReader sr = new StreamReader(names);
-            while ((str = sr.ReadLine()) != null)//判断行
+            while ((str = sr.ReadLine()) != null)// 
             {
                 listBoxSend.Items.Add(str);
             }
@@ -968,7 +958,7 @@ namespace SerialportSample
                 if (listBoxSendnum < listBoxSend.Items.Count)
                 {
                     //comm.Write(listBoxSend.Items[listBoxSendnum].ToString());
-                    //不需要再发送了，只要选中就会发送出去。
+                    // 
                     buttonReplaceTime.Enabled = false;
                     listBoxSend.SelectedIndex = listBoxSendnum;
                     listBoxSendnum++;
@@ -1343,27 +1333,27 @@ namespace SerialportSample
         protected void translate_command(byte[] str)
         {
             UInt16[] servo_value = new UInt16[33];
-            byte motor_num = 0;		   //舵机号
-            UInt16 motor_jidu = 0;	   //舵机脉宽值
-            UInt16 motor_time = 0;	   //执行时间
-            byte num_now = 0;		   //编号解析中间变量
-            byte PWM_now = 0;		   //脉宽解析中间变量
-            byte time_now = 0;		   //执行时间解析中间变量
-            byte flag_num = 0;		   //标记出现过#
-            byte flag_jidu = 0;		   //标记出现过P
-            byte flag_time = 0;		   //标记出现过T
-            UInt16 i = 0;				   //用来移动字符串
+            byte motor_num = 0;		   // 
+            UInt16 motor_jidu = 0;	   // 
+            UInt16 motor_time = 0;	   // 
+            byte num_now = 0;		   // 
+            byte PWM_now = 0;		   // 
+            byte time_now = 0;		   // 
+            byte flag_num = 0;		   // 
+            byte flag_jidu = 0;		   // 
+            byte flag_time = 0;		   // 
+            UInt16 i = 0;				   // 
 
             while (str[i] != '!')
             {
-                if (flag_num == 1)	 				//出现过#
+                if (flag_num == 1)	 				// 
                 {
-                    if (str[i] != 'P')				//如果当前字符不是P
+                    if (str[i] != 'P')				// 
                     {
-                        num_now = ASC_To_Valu(str[i]);//把当前数字字符转化成数字的值
+                        num_now = ASC_To_Valu(str[i]);// 
                         motor_num = (byte)(motor_num * 10 + num_now);
                     }
-                    else  						//当前字符是P
+                    else  						// 
                         flag_num = 0;
                 }
                 else
@@ -1371,14 +1361,14 @@ namespace SerialportSample
                     
                 }
 
-                if (flag_jidu == 1)				//出现过P
+                if (flag_jidu == 1)				// 
                 {
                     if ((str[i] != 'T') & (str[i] != '#'))
-                    {							//当前字符是出现p之后的非#非T的字符
-                        PWM_now = ASC_To_Valu(str[i]);//把当前数字字符转化成数字的值
+                    {							// 
+                        PWM_now = ASC_To_Valu(str[i]);// 
                         motor_jidu = (UInt16)(motor_jidu * 10 + PWM_now);
                     }
-                    else  						//当前字符是#或者T，角度数据结束
+                    else  						// 
                     {
                         flag_jidu = 0;
                         if (motor_jidu > 2500)
@@ -1391,11 +1381,11 @@ namespace SerialportSample
                     }
                 }
 
-                if (flag_time == 1)				//出现了T
+                if (flag_time == 1)				// 
                 {
-                    time_now = ASC_To_Valu(str[i]);//把当前数字字符转化成数字的值
+                    time_now = ASC_To_Valu(str[i]);// 
                     motor_time = (UInt16)(motor_time * 10 + time_now);
-                    servo_value[0] = motor_time;	   	//执行时间放在【0】位置
+                    servo_value[0] = motor_time;	   	// 
                     //Uart1_PutChar(UartRec[0]);
 
                     if (str[i + 1] == '!')

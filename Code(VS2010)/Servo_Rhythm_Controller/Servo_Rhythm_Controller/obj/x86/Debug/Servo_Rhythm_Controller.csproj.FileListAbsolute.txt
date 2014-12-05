@@ -29,3 +29,16 @@ E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm
 E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.application
 E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.exe.manifest
 E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.application
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe.config
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.exe
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.pdb
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe.manifest
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.application
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.pdb
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.csprojResolveAssemblyReference.cache
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.Properties.Resources.resources
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.csproj.GenerateResource.Cache
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.exe.manifest
+F:\Github\Servo_Rhythm_Controller\Code(VS2010)\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.application
