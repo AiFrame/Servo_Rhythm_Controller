@@ -1,0 +1,13 @@
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Release\Servo_Rhythm_Controller.exe.config
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Release\Servo_Rhythm_Controller.exe
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Release\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\Servo_Rhythm_Controller.csprojResolveAssemblyReference.cache
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\SerialportSample.SerialportSampleForm.resources
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\Servo_Rhythm_Controller.Properties.Resources.resources
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\Servo_Rhythm_Controller.csproj.GenerateResource.Cache
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\Servo_Rhythm_Controller.exe
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Release\Servo_Rhythm_Controller.exe.manifest
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Release\Servo_Rhythm_Controller.application
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\Servo_Rhythm_Controller.exe.manifest
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Release\Servo_Rhythm_Controller.application

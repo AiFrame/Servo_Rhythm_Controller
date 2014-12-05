@@ -1,0 +1,31 @@
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe.config
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.Properties.Resources.resources
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.csproj.GenerateResource.Cache
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\bin\Debug\USBDataLogger0.ico
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.exe
+E:\project\servo controller\Serial - 副本\Serial\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe.config
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.exe
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\USBDataLogger0.ico
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.Properties.Resources.resources
+E:\project\servo controller\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.csproj.GenerateResource.Cache
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe.config
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.Properties.Resources.resources
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.csproj.GenerateResource.Cache
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.exe
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.pdb
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.csprojResolveAssemblyReference.cache
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.exe.manifest
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\bin\Debug\Servo_Rhythm_Controller.application
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.exe.manifest
+E:\project\servo controller\power_rhythm_32\Servo_Rhythm_Controller\Servo_Rhythm_Controller\obj\x86\Debug\Servo_Rhythm_Controller.application

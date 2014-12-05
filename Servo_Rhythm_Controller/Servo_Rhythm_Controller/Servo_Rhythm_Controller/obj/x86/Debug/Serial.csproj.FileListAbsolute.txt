@@ -1,0 +1,45 @@
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\obj\x86\Debug\Serial.Properties.Resources.resources
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\bin\Debug\Serial.exe
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\bin\Debug\Serial.pdb
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\obj\x86\Debug\Serial.exe
+c:\users\fanlingyun\documents\visual studio 2010\Projects\Serial\Serial\obj\x86\Debug\Serial.pdb
+E:\C#实例\Serial\Serial\obj\x86\Debug\Serial.exe
+E:\C#实例\Serial\Serial\obj\x86\Debug\Serial.pdb
+E:\C#实例\Serial\Serial\bin\Debug\Serial.exe
+E:\C#实例\Serial\Serial\bin\Debug\Serial.pdb
+E:\C#实例\Serial\Serial\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\C#实例\Serial\Serial\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+E:\C#实例\Serial\Serial\obj\x86\Debug\Serial.Properties.Resources.resources
+E:\C#实例\Serial\Serial\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\C#实例\Serial\Serial\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\C#\Serial\Serial\Serial\obj\x86\Debug\Serial.exe
+F:\C#\Serial\Serial\Serial\obj\x86\Debug\Serial.pdb
+F:\C#\Serial\Serial\Serial\bin\Debug\Serial.exe
+F:\C#\Serial\Serial\Serial\bin\Debug\Serial.pdb
+F:\C#\Serial\Serial\Serial\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\C#\Serial\Serial\Serial\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+F:\C#\Serial\Serial\Serial\obj\x86\Debug\Serial.Properties.Resources.resources
+F:\C#\Serial\Serial\Serial\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\C#\Serial\Serial\Serial\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\bin\Debug\Serial.exe.config
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\bin\Debug\Serial.exe
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\bin\Debug\Serial.pdb
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\obj\x86\Debug\Serial.csprojResolveAssemblyReference.cache
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\obj\x86\Debug\Serial.Properties.Resources.resources
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\obj\x86\Debug\Serial.csproj.GenerateResource.Cache
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\obj\x86\Debug\Serial.exe
+E:\project\servo controller\STM32 舵机控制器资料\Serial\Serial\obj\x86\Debug\Serial.pdb
+E:\project\servo controller\Serial\Serial\bin\Debug\Serial.exe.config
+E:\project\servo controller\Serial\Serial\obj\x86\Debug\Serial.exe
+E:\project\servo controller\Serial\Serial\obj\x86\Debug\Serial.pdb
+E:\project\servo controller\Serial\Serial\bin\Debug\Serial.exe
+E:\project\servo controller\Serial\Serial\bin\Debug\Serial.pdb
+E:\project\servo controller\Serial\Serial\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+E:\project\servo controller\Serial\Serial\obj\x86\Debug\Serial.Properties.Resources.resources
+E:\project\servo controller\Serial\Serial\obj\x86\Debug\Serial.csproj.GenerateResource.Cache
+E:\project\servo controller\Serial\Serial\bin\Debug\USBDataLogger0.ico
