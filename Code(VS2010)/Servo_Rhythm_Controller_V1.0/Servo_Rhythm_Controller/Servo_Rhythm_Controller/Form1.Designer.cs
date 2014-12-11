@@ -3360,7 +3360,7 @@ namespace SerialportSample
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(55, 12);
             this.label38.TabIndex = 60;
-            this.label38.Text = "Recieve :";
+            this.label38.Text = "Receive :";
             // 
             // textBox_AD
             // 
