@@ -129,7 +129,7 @@ namespace SerialportSample
                         }
                         if (Cmd_Clear)
                         {
-                            if (builder.ToString() == "U") { MessageBox.Show("Erase FLASH complete！！"); Cmd_Clear = false; }
+                            if (builder.ToString() == "U") { MessageBox.Show("Erase Flash complete！！"); Cmd_Clear = false; }
                         }
                         if (Cmd_Read_AD)
                         {
@@ -860,7 +860,7 @@ namespace SerialportSample
             {
                 Runflag = false;
                 RoundRunflag = false;
-                if (MessageBox.Show("This will clear all data!Are you sure？", "Erase FLASH!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                if (MessageBox.Show("This will clear all data!Are you sure？", "Erase Flash!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                 {
                     comm.Write("CLEAR!");// 
                     Cmd_Clear = true;
@@ -1079,7 +1079,7 @@ namespace SerialportSample
             tra_S32.Value = 1500;
             txtSAll.Text = "1500";
             track_all_signal.Value = 1500;
-            //if (comm.IsOpen) comm.Write("#1P1500#2P1500#3P1500#4P1500#5P1500#6P1500#7P1500#8P1500#9P1500#10P1500#11P1500#12P1500#13P1500#14P1500#15P1500#16P1500#17P1500#18P1500#19P1500#20P1500#21P1500#22P1500#23P1500#24P1500#25P1500#26P1500#27P1500#28P1500#29P1500#30P1500#31P1500#32P1500T100!");
+            if (comm.IsOpen) comm.Write("#1P1500#2P1500#3P1500#4P1500#5P1500#6P1500#7P1500#8P1500#9P1500#10P1500#11P1500#12P1500#13P1500#14P1500#15P1500#16P1500#17P1500#18P1500#19P1500#20P1500#21P1500#22P1500#23P1500#24P1500#25P1500#26P1500#27P1500#28P1500#29P1500#30P1500#31P1500#32P1500T100!");
         }
 
         private void button_Read_AD_Click(object sender, EventArgs e)
