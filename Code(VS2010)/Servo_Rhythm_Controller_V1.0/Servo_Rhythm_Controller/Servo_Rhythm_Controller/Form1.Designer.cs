@@ -280,6 +280,9 @@ namespace SerialportSample
             this.button_All_GO = new System.Windows.Forms.Button();
             this.txtSAll = new System.Windows.Forms.TextBox();
             this.button_exit = new System.Windows.Forms.Button();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -384,6 +387,8 @@ namespace SerialportSample
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.track_all_signal)).BeginInit();
+            this.panel33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -678,7 +683,7 @@ namespace SerialportSample
             this.txGet.Multiline = true;
             this.txGet.Name = "txGet";
             this.txGet.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txGet.Size = new System.Drawing.Size(308, 46);
+            this.txGet.Size = new System.Drawing.Size(308, 63);
             this.txGet.TabIndex = 9;
             // 
             // label3
@@ -3293,9 +3298,9 @@ namespace SerialportSample
             this.button_CENTER_ALL.BackColor = System.Drawing.Color.White;
             this.button_CENTER_ALL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_CENTER_ALL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_CENTER_ALL.Location = new System.Drawing.Point(11, 415);
+            this.button_CENTER_ALL.Location = new System.Drawing.Point(6, 63);
             this.button_CENTER_ALL.Name = "button_CENTER_ALL";
-            this.button_CENTER_ALL.Size = new System.Drawing.Size(87, 23);
+            this.button_CENTER_ALL.Size = new System.Drawing.Size(84, 23);
             this.button_CENTER_ALL.TabIndex = 58;
             this.button_CENTER_ALL.Text = "Center All";
             this.button_CENTER_ALL.UseVisualStyleBackColor = false;
@@ -3303,6 +3308,7 @@ namespace SerialportSample
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.panel33);
             this.groupBox7.Controls.Add(this.label38);
             this.groupBox7.Controls.Add(this.panel2);
             this.groupBox7.Controls.Add(this.panel3);
@@ -3314,13 +3320,9 @@ namespace SerialportSample
             this.groupBox7.Controls.Add(this.panel5);
             this.groupBox7.Controls.Add(this.txGet);
             this.groupBox7.Controls.Add(this.panel6);
-            this.groupBox7.Controls.Add(this.track_all_signal);
-            this.groupBox7.Controls.Add(this.button_All_GO);
             this.groupBox7.Controls.Add(this.panel26);
             this.groupBox7.Controls.Add(this.panel7);
-            this.groupBox7.Controls.Add(this.txtSAll);
             this.groupBox7.Controls.Add(this.panel8);
-            this.groupBox7.Controls.Add(this.button_CENTER_ALL);
             this.groupBox7.Controls.Add(this.panel27);
             this.groupBox7.Controls.Add(this.panel16);
             this.groupBox7.Controls.Add(this.panel15);
@@ -3346,7 +3348,7 @@ namespace SerialportSample
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox7.Location = new System.Drawing.Point(8, 5);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(862, 443);
+            this.groupBox7.Size = new System.Drawing.Size(862, 460);
             this.groupBox7.TabIndex = 59;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Signal control";
@@ -3396,7 +3398,7 @@ namespace SerialportSample
             // 
             this.track_all_signal.AutoSize = false;
             this.track_all_signal.BackColor = System.Drawing.Color.White;
-            this.track_all_signal.Location = new System.Drawing.Point(11, 389);
+            this.track_all_signal.Location = new System.Drawing.Point(7, 41);
             this.track_all_signal.Maximum = 2500;
             this.track_all_signal.Minimum = 500;
             this.track_all_signal.Name = "track_all_signal";
@@ -3411,7 +3413,7 @@ namespace SerialportSample
             // 
             this.button_All_GO.BackColor = System.Drawing.Color.White;
             this.button_All_GO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_All_GO.Location = new System.Drawing.Point(58, 362);
+            this.button_All_GO.Location = new System.Drawing.Point(50, 16);
             this.button_All_GO.Name = "button_All_GO";
             this.button_All_GO.Size = new System.Drawing.Size(38, 21);
             this.button_All_GO.TabIndex = 60;
@@ -3421,7 +3423,7 @@ namespace SerialportSample
             // 
             // txtSAll
             // 
-            this.txtSAll.Location = new System.Drawing.Point(12, 362);
+            this.txtSAll.Location = new System.Drawing.Point(5, 16);
             this.txtSAll.Name = "txtSAll";
             this.txtSAll.Size = new System.Drawing.Size(39, 19);
             this.txtSAll.TabIndex = 59;
@@ -3437,6 +3439,44 @@ namespace SerialportSample
             this.button_exit.Text = "Exit";
             this.button_exit.UseVisualStyleBackColor = true;
             this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
+            // 
+            // panel33
+            // 
+            this.panel33.Controls.Add(this.button_CENTER_ALL);
+            this.panel33.Controls.Add(this.track_all_signal);
+            this.panel33.Controls.Add(this.txtSAll);
+            this.panel33.Controls.Add(this.button_All_GO);
+            this.panel33.Controls.Add(this.label39);
+            this.panel33.Controls.Add(this.pictureBox33);
+            this.panel33.Location = new System.Drawing.Point(6, 361);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(97, 89);
+            this.panel33.TabIndex = 64;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.White;
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(4, 4);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(27, 12);
+            this.label39.TabIndex = 4;
+            this.label39.Text = "ALL";
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.BackColor = System.Drawing.Color.White;
+            this.pictureBox33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.BackgroundImage")));
+            this.pictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox33.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(97, 89);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox33.TabIndex = 0;
+            this.pictureBox33.TabStop = false;
             // 
             // SerialportSampleForm
             // 
@@ -3606,6 +3646,9 @@ namespace SerialportSample
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.track_all_signal)).EndInit();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3862,6 +3905,9 @@ namespace SerialportSample
         private System.Windows.Forms.ComboBox comboBoxTAnum;
         private System.Windows.Forms.Button buttonCmd_STANDBY;
         private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.PictureBox pictureBox33;
     }
 }
 

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Servo_Rhythm_Controller.exe" size="553472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Servo_Rhythm_Controller.exe" size="561152">
       <assemblyIdentity name="Servo_Rhythm_Controller" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>0+zvjsWrCV/n2zMr+Frje6mI0D8=</dsig:DigestValue>
+        <dsig:DigestValue>a+0xvSYxKRFTvYmq2znm6jDzenA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
